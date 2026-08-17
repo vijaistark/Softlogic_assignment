@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Form</title>
+</head>
+
+<body style="text-align: center;">
+
+    <h1>Student Registration</h1>
+
+    <form method="post" action="day5.html" target="_blank">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <br><br>
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="18" max="65" step="1">
+
+        <br><br>
+
+        <!-- Password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" minlength="6" required>
+
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender</label>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <br><br>
+    <label>Skills</label>
+
+        <input type="checkbox" id="html" name="skill" value="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="python" name="skill" value="python">
+        <label for="python">Python</label>
+
+        <input type="checkbox" id="java" name="skill" value="java">
+        <label for="java">Java</label>
+
+        <br>
+        <br>
+        <label for="department">Department</label>
+
+        <select id="department" name="department">
+
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="eee">EEE</option>
+
+        </select>
+
+        <br>
+        <br>
+        <label for="about">About</label>
+
+        <textarea id="about" name="about" rows="4" cols="30"
+                  placeholder="Write something about yourself">
+        </textarea>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <p>
+        This is a student registration form.
+    </p>
+
+</body>
+
+</html>
