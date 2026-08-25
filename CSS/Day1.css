@@ -1,0 +1,29 @@
+#world{
+    text-align: center;
+}
+.mars{
+    background-color: aqua;
+}
+
+h3{
+    font-style: italic;
+    color: green;
+    
+}
+
+body{
+    background-color: tan;
+}
+
+h1.mars{
+    text-align: right;
+}
+
+h2{
+    color: blue;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: 1000;
+    background-color: gainsboro;
+    border: 10px;
+}
