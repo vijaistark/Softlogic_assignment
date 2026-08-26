@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-11</title>
+
+    <style>
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .menu li {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: black;
+            color: white;
+        }
+
+        .box {
+            width: 50%;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 80px auto;
+            text-align: center;
+        }
+
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: black;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+        }
+
+        .content {
+            height: 1000px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+        <li>Login</li>
+    </ul>
+
+    <div class="box">
+        This is a centered box.
+        <br>
+        margin: 0 auto centers it horizontally.
+    </div>
+
+    <div class="content">
+        <h3>Scroll down</h3>
+
+        <p>
+            This page contains enough content to make the page scroll.
+            The notification will remain fixed at the bottom-right corner.
+        </p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="notification">
+        Update Available
+    </div>
+
+</body>
+</html>
