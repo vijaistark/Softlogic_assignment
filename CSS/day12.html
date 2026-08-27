@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 - CSS Position, Links & Lists</title>
+
+    <style>
+        /* ---------- CSS POSITION ---------- */
+
+        .static {
+            position: static;
+            border: 3px solid black;
+            padding: 10px;
+        }
+
+        .relative {
+            position: relative;
+            left: 30px;
+            border: 3px solid blue;
+            padding: 10px;
+        }
+
+        .absolute-container {
+            position: relative;
+            height: 150px;
+            border: 3px solid green;
+            margin-top: 20px;
+        }
+
+        .absolute {
+            position: absolute;
+            right: 20px;
+            top: 30px;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        .fixed {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: orange;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: yellow;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+
+
+
+        a:link {
+    color: blue;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+        a:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+        a:hover {
+    color: red;
+    text-decoration: underline;
+    background-color: yellow;
+}
+
+        a:active {
+    color: green;
+    text-decoration: underline;
+}
+
+        ul {
+            list-style-type: square;
+        }
+
+        ol {
+            list-style-type: upper-roman;
+        }
+
+        .no-bullets {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Day 12 assignment</h1>
+
+    <hr>
+    <h2> CSS </h2>
+
+    <div class="static">
+        <p>static</p>
+    </div>
+
+    <br>
+
+    <div class="relative">
+    <P>relative</P>    
+    </div>
+
+    <br>
+
+        <div class="absolute">
+            <p>Absolute</p>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="sticky">
+    <p>sticky</p>    
+    </div>
+
+    <p>
+
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam nemo exercitationem cupiditate voluptatem laudantium reprehenderit. Repudiandae eius at quis commodi unde officiis, nihil aliquid velit incidunt tempora inventore ex saepe, ducimus porro qui blanditiis rerum ullam, dolorem veniam veritatis dicta minus fuga minima quibusdam. Vel similique voluptates fugiat id quos, ipsum fugit aliquid. Quasi at modi fugiat blanditiis consectetur sapiente rerum nihil odit in alias omnis animi laudantium reprehenderit ex facilis, saepe repellendus eos commodi amet minima distinctio id recusandae. Atque doloribus incidunt modi aut amet perferendis enim quaerat molestias voluptatibus ratione odit, commodi iste? Minima odit sequi quos obcaecati.    
+    </p>
+
+
+    <div class="fixed">
+        <P>
+            fixed
+        </P>
+    </div>
+
+    <hr>
+
+    <hr>
+
+
+    <h2 id="lists">Lists</h2>
+
+    <h3>Unordered List</h3>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+
+    <ol>
+        <li>Learn HTML</li>
+        <li>Learn CSS</li>
+        <li>Learn JavaScript</li>
+        <li>Learn React</li>
+    </ol>
+
+    <h3>List Without Bullets</h3>
+
+    <ul class="no-bullets">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+
+    <h3>Horizontal Menu</h3>
+
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <br><br><br><br><br><br>
+
+</body>
+</html>
