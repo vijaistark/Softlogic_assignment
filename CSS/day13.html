@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-13 Flexbox Tasks</title>
+
+    <style>
+        .container {
+            background-color: orange;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .logo {
+            background-color: darkcyan;
+            font-size: 30px;
+            gap: 30px;
+            padding-left: 5px;
+
+        }
+
+        .menu {
+            display: flex;
+            gap: 30px;
+            padding-right: 5px;
+        }
+
+        .menu div {
+            background-color: blue;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .center-container {
+            height: 300px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-box {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+
+        .vertical-menu {
+            height: 250px;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .vertical-menu div {
+            background-color: green;
+            padding: 10px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: orange;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .day-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .day-card {
+            background-color: lightgreen;
+            width: 200px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">
+            024vs
+        </div>
+
+        <div class="menu">
+            <div>hello</div>
+            <div>mars</div>
+            <div>jupiter</div>
+            <div>venus</div>
+            <div>sun</div>
+        </div>
+
+    </div>
+
+<br><br>
+    <div class="center-container">
+
+        <div class="center-box">
+        </div>
+
+    </div>
+
+<br><br>
+    <div class="vertical-menu">
+
+        <div>Home</div>
+        <div>About</div>
+        <div>carrer</div>
+        <div>Contact</div>
+        <div>Login</div>
+
+    </div>
+
+<br><br>
+    <div class="cards">
+
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+
+    </div>
+
+<br><br>
+    <div class="day-container">
+
+        <div class="day-card">day 1</div>
+        <div class="day-card">day 2</div>
+        <div class="day-card">day 3</div>
+        <div class="day-card">day 4</div>
+        <div class="day-card">day 5</div>
+
+    </div>
+
+</body>
+
+</html>
