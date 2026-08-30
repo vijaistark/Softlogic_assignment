@@ -1,29 +1,28 @@
-#world{
-    text-align: center;
-}
-.mars{
-    background-color: aqua;
+
+p {
+    color: #555;
+    line-height: 1.6;
 }
 
-h3{
+
+.intro {
     font-style: italic;
-    color: green;
-    
 }
 
-body{
-    background-color: tan;
+
+.highlight {
+    background-color: #f0f8ff;
+    padding: 8px;
 }
 
-h1.mars{
-    text-align: right;
+
+#header {
+    color: #2c3e50;
+    font-size: 32px;
 }
 
-h2{
-    color: blue;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    font-weight: 1000;
-    background-color: gainsboro;
-    border: 10px;
+
+.box {
+    border: 1px solid #ccc;
+    padding: 16px;
 }
