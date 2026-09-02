@@ -1,0 +1,280 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 15 Assignment</title>
+
+    <style>
+        body {
+            background-color: white;
+            user-select: none;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        @media screen and (min-width: 700px) {
+            body {
+                background-color: lightblue;
+            }
+
+            h1 {
+                font-size: medium;
+                color: blue;
+            }
+        }
+        @media screen and (min-width: 900px) {
+            body {
+                background-color: yellow;
+            }
+
+            h1 {
+                font-size: x-large;
+                color: black;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            body {
+                background-color: blanchedalmond;
+            }
+
+            h1 {
+                font-size: xx-large;
+                color: orange;
+            }
+        }
+        ul {
+            padding: 0;
+        }
+
+        ul a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        ul a:hover {
+            text-decoration: underline;
+            background-color: red;
+        }
+
+        .responsive-box {
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: lightgreen;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .rem-text {
+            font-size: 1.5rem;
+        }
+        .vw-heading {
+            font-size: 5vw;
+            text-align: center;
+        }
+        .font-one {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        .font-two {
+            font-family: Georgia, serif;
+            font-size: 20px;
+        }
+
+        .font-three {
+            font-family: "Courier New", monospace;
+            font-size: 16px;
+        }
+
+        .font-four {
+            font-family: "Times New Roman", serif;
+            font-size: 22px;
+        }
+
+        .responsive-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .grid-box {
+            padding: 30px;
+            background-color: lightcoral;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 599px) {
+            .responsive-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 899px) {
+            .responsive-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media screen and (min-width: 900px) {
+            .responsive-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        .old-columns {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .column {
+            padding: 10px;
+        }
+
+        @media screen and (min-width: 600px) {
+            .old-columns {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media screen and (min-width: 900px) {
+            .old-columns {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">Career</a>
+            <a href="#">Location</a>
+        </ul>
+    </div>
+
+    <br>
+
+    <h1 style="text-align: center;">
+        Welcome to Day 15 Assignment
+    </h1>
+
+    <br><br>
+    <h2>Existing 4 Columns</h2>
+
+    <div class="old-columns">
+
+        <div class="column" style="background-color: #aaa;">
+            <h2>1. Same Text</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aut accusamus quidem debitis distinctio, eius deserunt cum,
+                provident, adipisci architecto modi non?
+            </p>
+        </div>
+
+        <div class="column" style="background-color: #bbb;">
+            <h2>2. Same Text</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aut accusamus quidem debitis distinctio, eius deserunt cum,
+                provident, adipisci architecto modi non?
+            </p>
+        </div>
+
+        <div class="column" style="background-color: #ccc;">
+            <h2>3. Same Text</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aut accusamus quidem debitis distinctio, eius deserunt cum,
+                provident, adipisci architecto modi non?
+            </p>
+        </div>
+
+        <div class="column" style="background-color: #ddd;">
+            <h2>4. Same Text</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aut accusamus quidem debitis distinctio, eius deserunt cum,
+                provident, adipisci architecto modi non?
+            </p>
+        </div>
+
+    </div>
+
+
+    <br><br>
+    <h2>1. Responsive Box</h2>
+
+    <div class="responsive-box">
+
+        <h2>Responsive Box</h2>
+
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, maxime consectetur! Ducimus expedita sequi reprehenderit, et optio corporis aliquam ipsam pariatur quam. Praesentium tempora tenetur ut in laboriosam dolores voluptatibus, magnam aliquid vel, ducimus ab mollitia quos sequi, animi voluptates quasi sapiente id. Necessitatibus, tempora officia culpa nemo, odit molestias deleniti inventore dolores itaque veniam illum numquam porro. Maiores provident saepe, nemo nam natus blanditiis, eveniet fugiat deserunt nostrum ipsum sint nihil totam reprehenderit dicta quibusdam esse corporis ex eos, suscipit quidem minus quam iusto similique. Molestiae, reiciendis quod fugit distinctio minus fugiat nam tempore eaque esse! Id, corrupti repellendus.
+        </p>
+
+    </div>
+
+
+    <br><br>
+
+
+
+    <p class="rem-text">
+        This paragraph has a font size of 1.5rem.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dicta voluptatibus saepe asperiores nulla ex porro molestias commodi eveniet quibusdam voluptatum ipsum unde enim consectetur repellat culpa praesentium rem, iusto dolores architecto ducimus illo dolorem assumenda! Tempora nesciunt voluptatum ratione voluptates quae explicabo. Non saepe suscipit delectus error iusto accusamus!  </p>
+
+
+    <br><br>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum quae aut deserunt quos itaque expedita facere maxime, odio possimus exercitationem nam. Ducimus harum porro ut eius sequi laborum laboriosam ipsa autem delectus ipsam dolore odio, ex quidem repellat. Placeat eaque tempora exercitationem enim, est adipisci accusamus sunt libero itaque qui.</p>
+
+
+    <br><br>
+
+    <p class="font-one">
+        This text uses Arial - 18px.
+    </p>
+
+    <p class="font-two">
+        This text uses Georgia - 20px.
+    </p>
+
+    <p class="font-three">
+        This text uses Courier New - 16px.
+    </p>
+
+    <p class="font-four">
+        This text uses Times New Roman - 22px.
+    </p>
+
+
+    <br><br>
+    <div class="responsive-grid">
+
+        <div class="grid-box">Box 1</div>
+        <div class="grid-box">Box 2</div>
+        <div class="grid-box">Box 3</div>
+        <div class="grid-box">Box 4</div>
+        <div class="grid-box">Box 5</div>
+        <div class="grid-box">Box 6</div>
+        <div class="grid-box">Box 7</div>
+        <div class="grid-box">Box 8</div>
+
+    </div>
+
+
+    <br><br>
+</body>
+</html>
