@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    background-color: lightblue;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: blue;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 60px;
+    font-style: italic;
+}
+
+.logo p {
+    margin: -5px 0 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.head {
+    flex: 1;
+    text-align: center;
+}
+
+.head h2 {
+    margin: 0;
+    color: darkblue;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    color: blue;
+}
+
+.title h1 {
+    font-size: 45px;
+    margin: 10px;
+}
+
+.title h3 {
+    font-size: 14px;
+}
+
+
+.maintitle {
+    text-align: center;
+}
+
+.maintitle h1 {
+    margin: 5px;
+    font-size: 35px;
+}
+
+.maintitle p {
+    font-style: italic;
+}
+
+
+.image {
+    text-align: center;
+}
+.image img {
+
+    width: 120px;
+}
+
+
+.flowchart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: blue;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.flowchart p {
+    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+/* VENUE DETAILS */
+.venuedetail {
+    display: flex;
+    justify-content: space-around;
+
+    background-color: white;
+    border: 2px solid blue;
+    border-radius: 20px;
+
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.venuedetail div {
+    padding: 0 20px;
+    border-right: 1px solid gray;
+}
+
+.venuedetail div:last-child {
+    border-right: none;
+}
+
+.venuedetail h3 {
+    color: blue;
+    margin: 5px;
+}
+
+.venuedetail p {
+    margin: 3px;
+    font-weight: bold;
+}
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    padding: 15px;
+}
+
+footer h2 {
+    margin: 5px;
+    background-color: lightblue;
+    color: blue;
+    padding: 8px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.footer-content div {
+    width: 25%;
+    border-right: 1px solid white;
+}
+
+.footer-content div:last-child {
+    border-right: none;
+}
+
+.footer-content h3 {
+    margin: 5px;
+}
+
+.footer-content p {
+    font-size: 12px;
+}
+
+.last {
+    margin: 15px 0 5px;
+}
