@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Practice</title>
+</head>
+
+<body>
+
+    <h1>JavaScript DOM Practice</h1>
+
+    <h2>Task 1</h2>
+
+    <p id="paragraph">Old paragraph</p>
+
+    <button id="myButton">Click Me</button>
+
+    <div id="myDiv">This is a div</div>
+
+
+    <h2>Task 2</h2>
+
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <p>Paragraph 4</p>
+
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Orange</li>
+    </ul>
+
+    <p id="count"></p>
+
+    <h1>Heading 1</h1>
+    <h1>Heading 2</h1>
+
+
+    <h2>Task 3</h2>
+
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+    <p class="hidden-item">This will be hidden</p>
+    <p class="hidden-item">This will also be hidden</p>
+
+    <p class="message"></p>
+    <p class="message"></p>
+    <p class="message"></p>
+
+
+    <h2>Task 4</h2>
+
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+
+    <p class="text">Change my color</p>
+
+    <form>
+        <input type="text" value="Vijay">
+    </form>
+
+    <input type="text" value="Hello">
+
+    <p class="message">Message 1</p>
+    <p class="message">Message 2</p>
+    <p class="message">Message 3</p>
+
+
+    <script>
+
+        let paragraph = document.getElementById("paragraph");
+        paragraph.innerHTML = "New paragraph text";
+
+        let button = document.getElementById("myButton");
+
+        button.onclick = function () {
+            button.disabled = true;
+        };
+
+        let div = document.getElementById("myDiv");
+        div.style.backgroundColor = "yellow";
+
+
+        let para = document.getElementsByTagName("p");
+
+        for (let i = 0; i < para.length; i++) {
+            para[i].style.color = "red";
+        }
+
+        let list = document.getElementsByTagName("li");
+
+        document.getElementById("count").innerHTML =
+            "Number of list items: " + list.length;
+
+        let headings = document.getElementsByTagName("h1");
+
+        for (let i = 0; i < headings.length; i++) {
+            headings[i].style.fontSize = "40px";
+        }
+
+
+        let boxes = document.getElementsByClassName("box");
+
+        for (let i = 0; i < boxes.length; i++) {
+            boxes[i].style.backgroundColor = "yellow";
+        }
+
+        let hiddenItems =
+            document.getElementsByClassName("hidden-item");
+
+        for (let i = 0; i < hiddenItems.length; i++) {
+            hiddenItems[i].style.display = "none";
+        }
+
+        let messages =
+            document.getElementsByClassName("message");
+
+        for (let i = 0; i < messages.length; i++) {
+            messages[i].innerHTML = "Hello from JavaScript";
+        }
+
+
+        let firstPara = document.querySelector("p");
+        firstPara.innerHTML = "First paragraph changed";
+
+        let text = document.querySelector(".text");
+        text.style.color = "blue";
+
+        let formInput = document.querySelector("form input");
+        console.log(formInput.value);
+
+        let textInput =
+            document.querySelector('input[type="text"]');
+
+        console.log(textInput.value);
+
+        let allMessages =
+            document.querySelectorAll(".message");
+
+        for (let i = 0; i < allMessages.length; i++) {
+            allMessages[i].style.color = "green";
+        }
+
+    </script>
+
+</body>
+
+</html>
