@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">Click me</button>
+    <p id="output">
+
+    </p>
+
+    <p id="text">Hello i am paragraph</p>
+
+    <button id="btn2">Change colour</button>
+
+    <Div id="box">move your mouse here</Div>
+
+
+    <button id="btn3">
+        double click me
+
+    </button>
+
+    <br>
+
+    <input type="text" id="input" placeholder="Type something">
+
+    <p id="key">
+    </p>
+
+    <button id = "btn4">Click Me</button>
+    <p id = "count">
+        0    </p>
+
+        <button id="btn5">Change Text</button>
+
+<p id="text5">Original text</p>
+
+
+
+
+    <script>
+        let btn = document.getElementById("btn");
+        let output = document.getElementById("output");
+
+        btn.addEventListener("click", function () {
+            output.innerHTML = "hello world";
+        }
+        );
+
+        let text = document.getElementById("text");
+        let btn2 = document.getElementById("btn2");
+
+        btn2.addEventListener("click", function () {
+            text.style.color = "red";
+        });
+
+
+        let box = document.getElementById("box");
+
+        box.addEventListener("mouseover", function () {
+            box.style.backgroundColor = "yellow";
+        });
+
+        let btn3 = document.getElementById("btn3");
+
+        btn3.addEventListener("dblclick", function () {
+            btn3.style.backgroundColor = "maroon";
+        });
+
+
+        let input = document.getElementById("input");
+        let key = document.getElementById("key");
+
+        input.addEventListener("keydown", function (event) {
+            key.innerHTML = event.key;
+            key.style.fontSize = "160%";
+
+        });
+
+        let btn4 = document.getElementById("btn4");
+        let count = document.getElementById("count");
+
+        let number = 0;
+
+        btn4.addEventListener("click",function(){
+            number = number+1;
+            count.innerHTML = number;
+        });
+
+        let btn5 =document.getElementById("btn5");
+        let text5 = document.getElementById("text5");
+
+        btn5.addEventListener("click",function(){
+            text5.innerHTML = "vanakam da mapla theni la irudhu";
+        })
+
+        
+
+
+    </script>
+
+
+</body>
+
+</html>
