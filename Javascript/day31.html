@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("hello world");
+        console.log("Task1");
+        console.log("Task2");
+
+        setTimeout(() => {
+            console.log("hello world")
+        }, 2000);
+        console.log("end assignment");
+
+        setInterval(() => {
+            console.log("hello chennai");
+        }, 1000);
+
+        for (var i = 1; i <= 5; i++) {
+            setTimeout(() => {
+                console.log(i);
+            }, 1000);
+        }
+
+        let myPromise = new Promise(function (resolve, reject) {
+
+            let success = true;
+
+            if (success) {
+                resolve("Task completed");
+            } else {
+                reject("Task failed");
+            }
+
+        });
+
+        
+        myPromise.then(
+            function (value) {
+                console.log(value);
+            },
+            function (error) {
+                console.log(error);
+            }
+        );
+
+        function getnumbers(){
+            return [1,2,3,4,5];
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
