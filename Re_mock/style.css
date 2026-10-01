@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+}
+header{
+    padding: 10px 30px;
+}
+header h1{
+    color: blue;
+    /* text-align: left; */
+}
+header p{
+    color: blue;
+    /* text-align: right; */
+}
+
+.hero{
+    background-color: blue;
+    color: white;
+    padding: 30px;
+}
+.content h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.content h3 {
+    font-size: 60px;
+    color: lightblue;
+    margin: 0;
+}
+
+.content h4 {
+    font-size: 30px;
+}
+
+.jd {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 20px;
+}
+.jd h1{
+    color: darkblue;
+}
+.jd p{
+    font-size: 15px;
+}
+
+.main{
+    display: flex;
+}
+
+.box{
+    width: 50%;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.box h2{
+    padding: 10px;
+}
+
+.box li {
+    margin: 15px;
+    
+}
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.bottom{
+    margin: 20px;
+    display: flex;
+}
+
+.join{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.apply{
+    padding: 20px;
+}
+
+.apply h2 {
+    color: blue;
+}
+
+.join h2 {
+    color: blue;
+}
+
+.apply a {
+    color: white;
+    background-color: blue;
+    padding: 10px;
+}
