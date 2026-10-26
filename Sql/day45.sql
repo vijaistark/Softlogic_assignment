@@ -57,7 +57,7 @@ INSERT INTO Employees VALUES
 (4, 'Karthik', 25, 'IT', 40000, 'karthik@gmail.com'),
 (5, 'Divya', 22, 'Sales', 28000, 'divya@gmail.com');
 
-INSERT INTO Customers VALUES
+INSERT INTO Customer VALUES
 (1, 'Rahul', 'Chennai', '9876543210', 'rahul@gmail.com', 25),
 (2, 'Sneha', 'Madurai', '9876543211', 'sneha@gmail.com', 23),
 (3, 'Ajay', 'Salem', '9876543212', 'ajay@gmail.com', 26),
@@ -95,10 +95,10 @@ DELETE FROM Employees WHERE emp_id = 5;
 DELETE FROM Customers WHERE cust_id = 5;
 
 SELECT * FROM Employees;
-SELECT * FROM Customers;
+SELECT * FROM Customer;
 
 TRUNCATE TABLE Employees;
-TRUNCATE TABLE Customers;
+TRUNCATE TABLE Customer;
 
 DROP TABLE Employees;
 DROP TABLE Customers;
